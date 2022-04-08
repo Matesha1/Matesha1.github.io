@@ -1,0 +1,112 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background: #F0C27B;
+    background: linear-gradient(#F0C27B 0%, #FF4E50 30%, #F9D423 100%);
+    /*background: url("../img/sun.jpg");*/
+}
+
+.content {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-top: 0;
+    background-color: white;
+    width: 700px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+
+}
+
+.film {
+    width: 700px;
+    margin-top: 30px;
+}
+
+.button1 {
+    color: white;
+    padding: 10px 10px;
+    margin: 20px 10px;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #FF4E50 50%, #F9D423 100%);
+    background-size: 200% auto;
+    transition: .5s;
+}
+
+.button1:hover {
+    background-position: right center;
+}
+
+.hh {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.cont12 {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: -25px;
+    background: #BB377D;
+    width: 700px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+
+}
+
+.head {
+    margin: auto;
+}
+
+.menu {
+    list-style: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.s {
+    text-decoration: none;
+    color: #00d2ff;
+    margin: 40 60 40 60px;
+
+    font-family: sans-serif;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 31%, rgba(252, 176, 69, 1) 100%);
+    border: 50px;
+    border-radius: 100px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.s:hover {
+    background-color: aqua;
+    border-radius: 40px;
+    transition: 1s;
+    background-position: right center;
+}
+
+#mp {
+    text-align: center;
+}
+
+.we {
+    width: 350px;
+    height: 250px;
+}
+
+.geor {
+    background: red;
+    background: -webkit-linear-gradient(left, orange, yellow, green, cyan, blue, violet);
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right, orange, yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+}
