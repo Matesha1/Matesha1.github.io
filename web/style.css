@@ -1,0 +1,65 @@
+body{
+    display: flex;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(6,68,160,1) 0%, rgba(0,212,255,1) 100%);
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+/*
+    width: 100%;
+    height: 100%;
+*/
+}
+/*Оформление карточки*/
+.Back{
+    display: inline-block;   
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    min-height: 300px;
+    min-width: 300px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+/*Картинка*/
+.picture{
+    display: flex;
+    height: 150px;
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;/*Заменяемое содержимое имеет размер, обеспечивающий сохранение соотношения сторон при заполнении всего поля содержимого элемента. Если соотношение сторон объекта не соответствует соотношению сторон его блока, то объект будет обрезан по размеру.*/
+    object-position: center;
+}
+ h2{
+    font-family:"Segoe UI";
+    overflow-wrap: anywhere;
+} 
+/*Текст*/
+p{
+    font-family:"Segoe UI";/*Бандера-Сергей*/
+    overflow-wrap: anywhere;
+}
+/*Кнопка action*/
+.button_1{
+    background: linear-gradient(90deg,#4773e3,#869fde);
+    font-family:"Segoe UI";
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+    border-color: #2c56c2;
+}
+/*под вопросом*/
+/*Это не нужно пока что(вроде как не нужно(НЕ НУЖНО, ЕСТЬ WRAP!))*/
+/*
+.text_new {
+    display: inline-block;
+    min-height: 300px;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+*/
+
