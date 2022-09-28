@@ -1,0 +1,363 @@
+ body {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100vh;
+     /* box-sizing: border-box; */
+ }
+
+ .heart {
+     position: relative;
+     width: 100px;
+     height: 80px;
+     animation: heart 5s infinite linear;
+ }
+
+ .heart::before,
+ .heart::after {
+     content: "";
+     position: absolute;
+     left: 50px;
+     top: 0;
+     width: 50px;
+     height: 80px;
+     background: #b17c83;
+     border-radius: 50px 50px 0 0;
+     transform: rotate(-45deg);
+     transform-origin: 0 100%;
+     animation: colour 5s infinite linear;
+ }
+
+ .heart::after {
+     left: 0;
+     transform: rotate(45deg);
+     transform-origin: 100% 100%;
+ }
+
+ .circle {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 130px;
+     height: 130px;
+     border-radius: 100%;
+     border: 10px dashed rgb(28, 96, 179);
+     animation: circle 5s infinite linear;
+ }
+
+ @keyframes heart {
+     0% {
+         transform: scale(1);
+         /* border-top-color: black ; */
+
+     }
+
+     50% {
+         transform: scale(1.25);
+         /* transform: translateY(-40px); */
+         /* border-left-color: black ; */
+     }
+
+     100% {
+         transform: scale(1);
+         /* border-bottom-color: black ; */
+     }
+ }
+
+ @keyframes colour {
+
+     /*0%{
+       
+        /* border-bottom: 5px solid black; 
+    }
+    25%{
+        background: red;
+    }
+    50%{
+        background: red;
+    }
+    75%{
+        background: red;
+    }
+    100%{
+        background: red;
+    }
+}*/
+     100%,
+     0% {
+         background-color: rgb(255, 0, 0);
+     }
+
+     8% {
+         background-color: rgb(255, 127, 0);
+     }
+
+     16% {
+         background-color: rgb(255, 255, 0);
+     }
+
+     25% {
+         background-color: rgb(127, 255, 0);
+     }
+
+     33% {
+         background-color: rgb(0, 255, 0);
+     }
+
+     41% {
+         background-color: rgb(0, 255, 127);
+     }
+
+     50% {
+         background-color: rgb(0, 255, 255);
+     }
+
+     58% {
+         background-color: rgb(0, 127, 255);
+     }
+
+     66% {
+         background-color: rgb(0, 0, 255);
+     }
+
+     75% {
+         background-color: rgb(127, 0, 255);
+     }
+
+     83% {
+         background-color: rgb(255, 0, 255);
+     }
+
+     91% {
+         background-color: rgb(255, 0, 127);
+     }
+ }
+
+ @keyframes circle {
+     0% {
+         transform: scale(1);
+         transform: rotate(0deg);
+     }
+
+     50% {
+         transform: scale(1.25);
+         transform: rotate(180deg);
+
+     }
+
+     100% {
+         transform: scale(1);
+         transform: rotate(360deg);
+     }
+ }
+
+ /*Издевательство*/
+ /*.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: rgb(177,90,68);
+  background: linear-gradient(0deg, rgba(177,90,68,1) 26%, rgba(246,187,50,1) 76%);
+}
+.blocks{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform:
+    translateX(60px) translateY(40px)
+    skewY(180deg)
+    skewX(45deg);
+    animation: da 5s infinite; 
+    
+}
+@keyframes da{
+    0%{
+       filter: saturate(100%);
+    }
+    25%{
+        filter: saturate(25%)  
+    }
+    50%{
+        filter: saturate(50%);
+    }
+    75%{
+        filter: saturate(75%);
+    }
+    100%{
+        filter: saturate(100%);
+        transform: 
+    }
+}
+.blocks::before{
+    content:"";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 200px;
+    z-index: 100;
+    transform: skewX(45deg);
+    transform-origin: bottom;
+}
+.blocks span{
+    position: relative;
+    display: block;
+    background: #b653ff;
+    transition: 0.5s;
+    width: 200px;
+    height: 40px;
+    z-index: var(--i);
+    animation: yes 3s infinite;
+    animation-delay: calc(-1s * var(--i));
+}
+@keyframes yes{
+      0%,100% {
+    transform: translateX(-70px);
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: translateX(70px);
+      transform: rotate(180deg);
+  }
+}
+
+.steps span:hover {
+  background: #33a3ee;
+  transition: 0.5s;
+}
+.blocks span::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: -150px;
+    height: 100%;
+    width: 150px;
+    background: #4258ff;
+    transform: skewY(45deg);
+    transform-origin: right;
+    transition: 0.5s;
+}
+.blocks span:hover::before{
+    background: yellow;
+    transition: 0,5s;
+}
+.blocks span::after{
+    content: "";
+    position: absolute;
+    top: -150px;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: #f00;
+    transform: skewX(45deg);
+    transform-origin: bottom;
+    transition: 0.5s;
+}
+.blocks span:hover::after{
+    background: #00faad;
+} */
+
+
+
+ /*---------------Кирка---------------*/
+ /* body{
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: rgb(164,124,29);
+  background: linear-gradient(0deg, rgba(164,124,29,1) 28%, rgba(93,205,61,1) 48%, rgba(104,239,255,1) 84%);
+}
+.blocks{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.blocks span{
+    position: relative;
+    display: block;
+    background: #373319;
+    border-radius: 10px;
+    transition: 0.5s;
+    width: 150px;
+    height: 15px;
+    z-index: var(--i);
+    animation: dig 1.5s infinite;
+    animation-delay: calc(-1s * var(--i));
+}
+.blocks span::after{
+    content: "";
+    position: absolute;
+    width:100px;
+    height:50px;
+    border-radius: 50%;
+    border-top:15px solid rgb(255, 0, 0);
+    transform-origin: bottom;
+    transition: 0.5s;
+    transform: rotate(90deg)
+    translateY(-40px)
+    translateX(-49px);
+    
+} */
+
+ /*
+.circle{
+
+    align-content: center;
+    justify-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    animation: square 3s infinite; 
+}
+
+@keyframes square{
+    0%{
+        
+        border-radius: 50%;
+    }
+    25%{
+        border-radius: 25%;
+        background: rgb(166,66,233);
+background: linear-gradient(90deg, rgba(166,66,233,1) 7%, rgba(255,51,51,1) 34%, rgba(241,219,89,1) 68%);
+    }
+    50%{
+        border-radius: 0%;
+        background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 19%, rgba(175,111,190,1) 44%, rgba(246,187,50,1) 76%);
+    }
+    75%{
+        border-radius: 25%;
+
+        background-position: center;
+        background-attachment: fixed;
+        background: rgb(166,66,233);
+background: linear-gradient(90deg, rgba(166,66,233,1) 7%, rgba(255,51,51,1) 34%, rgba(241,219,89,1) 68%);
+
+        
+    }
+    100%{
+        border-radius: 50%;   
+    }
+}
+*/
+
+ /*
