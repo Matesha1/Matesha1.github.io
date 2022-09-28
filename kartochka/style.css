@@ -1,0 +1,102 @@
+body{
+    display: flex;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(6,68,160,1) 0%, rgba(0,212,255,1) 100%);
+    justify-content: center;
+/*    align-items: center;*/
+    flex-wrap: wrap;
+    font-family:"Arial";
+    overflow-wrap: anywhere;
+/*
+    width: 100%;
+    height: 100%;
+*/
+}
+/*Оформление карточки*/
+.Back{
+    display: inline-block;  
+/*    justify-content:space-around;*/
+    width: 300px;
+    height: 100%;
+    /* background-color: white; */
+    border-radius: 15px;
+    /* padding: 10px; */
+    /* min-height: 300px;
+    min-width: 300px; */
+    margin-left: 90px;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+.Back:hover{
+    background-color: transparent;
+    height: 50%;
+}
+.colouroftext{
+    display: inline-block;
+    background-color: white;
+    height: 100%;/* мне кажется это плохая идея*/
+}
+/*Картинка*/
+.picture{
+    display: flex;
+    height: 250px; 
+    width: 100%; 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;/*Заменяемое содержимое имеет размер, обеспечивающий сохранение соотношения сторон при заполнении всего поля содержимого элемента. Если соотношение сторон объекта не соответствует соотношению сторон его блока, то объект будет обрезан по размеру.*/
+    object-position: center;
+    transition: 1s;
+}
+.picture:hover{
+    border-radius: 50%;
+    background-color: transparent;
+}
+.transparent{
+    background-color: white;
+    border-color:black;
+    height: 250px;
+    transition: 0.5s;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.transparent:hover{
+    background-color: transparent;
+}
+/*
+ h2{
+    overflow-wrap: anywhere;
+} 
+*/
+/*Текст*/
+p{
+/*    overflow-wrap: anywhere;*/
+    font-size: large;
+}
+/*Кнопка action*/
+.button_1{
+    background: linear-gradient(90deg,#4773e3,#869fde);
+/*    font-family:"Segoe UI";*/
+    width: 99px;
+    padding: 20px 10px;
+    border-radius: 20px;
+    border-color: #2c56c2;
+    color: white;
+    border:none;
+    
+}
+.button_1:hover{
+    cursor: pointer;
+}
+/*под вопросом*/
+/*Это не нужно пока что(вроде как не нужно(НЕ НУЖНО, ЕСТЬ WRAP!))*/
+/*
+.text_new {
+    display: inline-block;
+    min-height: 300px;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+*/
+
